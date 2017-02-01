@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Game!</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body class="center">
+<div id="wrapper">
+	<div id="Header">
+		<img id="images/splash" src="ZeldaIntro.png">
+		<img id="images/dangerousAlone" src="dangerous-alone.png">
+		<audio src="http://zeldauniverse.s3.amazonaws.com/soundtracks/legendofzeldaost/01%20-%20Intro.mp3" type="audio/mpeg" autobuffer autoplay autoloop loop></audio>
+		<div id="highestScorers">
+			<h1>Highest Scores</h1>
+			<div id="highestArray">
+				<ul id="scoreList">
+					<li class="scoreLine"><span id="highestArrayName0"> </span> <span id="highestArrayScore0"> </span></li>
+				</ul>
+			</div>
+			<img src="images/hyrule-crest.png" alt="">
+		</div>
+
+		<div id="header-middle">
+			<button id="start" onclick="startGame();">Start Game</button>
+			<button id="player" onclick="newPlayer();">START</button>
+			<input id="player-name" type="text" placeholder="Player Name">
+			<div id="header-center">
+				<p>Score: <span id="score">--</span></p>
+				<p>Time Played: <span id=timer>--</span></p>
+				<p>Highscore: <span id="hi-score">--</span></p>
+			</div>
+		</div>
+		<div id="header-lower">
+			<div id="header-left">
+				
+				<div id="rupees">
+				<img src="images/rupy.gif" alt=""><span id="rupee-counter"> -- </span>
+				</div>				
+			</div>
+			<div id="header-right">
+				<p id="deaths">
+					Hits: --  
+				</p>
+				<div id="health">
+
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript" src="canvasGame.js"></script>
+</body>
+</html>
